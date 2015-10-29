@@ -426,7 +426,7 @@ void kernel_restart(char *cmd)
 	sec_param_restart_reason(cmd);
 #endif
 #ifdef CONFIG_SEC_MONITOR_BATTERY_REMOVAL
-	kernel_sec_set_normal_pwroff(1);
+//	kernel_sec_set_normal_pwroff(1);
 #endif
 	kernel_restart_prepare(cmd);
 	if (!cmd)
@@ -470,7 +470,7 @@ EXPORT_SYMBOL_GPL(kernel_halt);
 void kernel_power_off(void)
 {
 #ifdef CONFIG_SEC_MONITOR_BATTERY_REMOVAL
-	kernel_sec_set_normal_pwroff(1);
+//	kernel_sec_set_normal_pwroff(1);
 #endif
 	kernel_shutdown_prepare(SYSTEM_POWER_OFF);
 	if (pm_power_off_prepare)
