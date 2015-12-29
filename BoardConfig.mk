@@ -44,7 +44,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/f
 # Display
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_USES_C2D_COMPOSITION := true
-TARGET_USES_ION := true
+#TARGET_USES_ION := true
 #TARGET_USE_ION_COMPAT := true
 USE_OPENGL_RENDERER := true
 
@@ -64,6 +64,7 @@ RECOVERY_SDCARD_ON_DATA := true
 # TWRP-Specific
 TW_THEME := landscape_hdpi
 TW_HAS_DOWNLOAD_MODE := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
@@ -73,7 +74,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_IGNORE_MAJOR_AXIS_0 := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_L_CRYPTO := true
-TW_TARGET_USES_QCOM_BSP := true
+#TW_TARGET_USES_QCOM_BSP := true
 HAVE_SELINUX := true
 
 # Charging mode

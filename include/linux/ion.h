@@ -47,7 +47,7 @@ struct ion_allocation_data {
  size_t align;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  unsigned int heap_id_mask;
- unsigned int heap_mask;
+//  unsigned int heap_mask;
  unsigned int flags;
  ion_user_handle_t handle;
 };
