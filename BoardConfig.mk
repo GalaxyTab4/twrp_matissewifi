@@ -77,6 +77,24 @@ TW_INCLUDE_L_CRYPTO := true
 #TW_TARGET_USES_QCOM_BSP := true
 HAVE_SELINUX := true
 
+# MultiROM
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := $(LOCAL_PATH)/multirom/mr_init_devices.c
+MR_DPI := hdpi
+MR_DPI_MUL := 1
+MR_DPI_FONT := 160
+MR_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
+MR_KEXEC_MEM_MIN := 0x06200000
+MR_DEVICE_VARIANTS := matissewifi matissewifiue
+MR_KEXEC_DTB := true
+MR_PIXEL_FORMAT := "RGBX_8888"
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEADER := $(LOCAL_PATH)/include/linux/mr_qcom_overlay.h
+MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
+MR_CONTINUOUS_FB_UPDATE := true
+#MR_DEVICE_HOOKS := $(LOCAL_PATH)/multirom/mr_hooks.c
+#MR_DEVICE_HOOKS_VER := 3
+
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
