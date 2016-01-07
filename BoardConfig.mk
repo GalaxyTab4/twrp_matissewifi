@@ -1,5 +1,5 @@
 # Mod
-TWRP_VERSION := 20151228
+TWRP_VERSION := 20160107
 PREBUILT_KERNEL := false
 
 LOCAL_PATH := device/samsung/matissewifi
@@ -63,6 +63,7 @@ RECOVERY_SDCARD_ON_DATA := true
 
 # TWRP-Specific
 TW_THEME := landscape_hdpi
+DEVICE_RESOLUTION := 1280x800
 TW_HAS_DOWNLOAD_MODE := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_INTERNAL_STORAGE_PATH := "/data/media"
@@ -74,7 +75,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_IGNORE_MAJOR_AXIS_0 := true
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_L_CRYPTO := true
-#TW_TARGET_USES_QCOM_BSP := true
+TW_TARGET_USES_QCOM_BSP := true
 HAVE_SELINUX := true
 
 # MultiROM
